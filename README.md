@@ -4,7 +4,7 @@ This is a demo Android application showcasing how to integrate the **[zkcpp](htt
 
 It demonstrates how to:
 - Use the **[native-lib.cpp](https://github.com/kazimaruf991/AMS-Demo/blob/master/app/src/main/cpp/native-lib.cpp)** JNI wrapper to bridge `zkcpp` with Android
-- Leverage the provided [Java helper classes](https://github.com/kazimaruf991/AMS-Demo/tree/master/app/src/main/java/com/kmmaruf/attendancemanagementsystem/nativeclasses) to interact with the native library
+- Leverage the provided **[Java helper classes](https://github.com/kazimaruf991/AMS-Demo/tree/master/app/src/main/java/com/kmmaruf/attendancemanagementsystem/nativeclasses)** to interact with the native library
 
 ---
 
