@@ -19,5 +19,5 @@ It demonstrates how to:
 
 ## 📚 Notes
 
-- This app is for demonstration purposes only
+- This app is for demonstration purposes only and may contain bugs.
 - The [cpp/zk](https://github.com/kazimaruf991/AMS-Demo/tree/master/app/src/main/cpp/zk) directory in this project will not be maintained — always use the latest files from the `zkcpp`.
