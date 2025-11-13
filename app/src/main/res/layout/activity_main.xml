@@ -1,0 +1,185 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvDeviceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Device Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Row 1: Show Users + Show Records -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShowUsers"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Show Users"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="?android:attr/textColorPrimaryInverse" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShowRecords"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Show Records"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="?android:attr/textColorPrimaryInverse" />
+        </LinearLayout>
+
+        <!-- Row 2: Add Users + Delete Users -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddUsers"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Add Users"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="?android:attr/textColorPrimaryInverse" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSetTime"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Set Time"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="?android:attr/textColorPrimaryInverse" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRestartDevice"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Restart Device"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="?android:attr/textColorPrimaryInverse" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPowerOffDevice"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Power Off Device"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="?android:attr/textColorPrimaryInverse" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShowTemplates"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="Show Finger Templates"
+            android:textColor="?android:attr/textColorPrimaryInverse" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartLiveCapture"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="Start Live Capture"
+            android:textColor="?android:attr/textColorPrimaryInverse" />
+
+        <!-- Show Device Info Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShowDeviceInfo"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="Show Device Information"
+            android:textColor="?android:attr/textColorPrimaryInverse" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRefreshDevice"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="Refresh Device"
+            android:textColor="?android:attr/textColorPrimaryInverse" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDisconnectDevice"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="Disconnect Device"
+            android:textColor="?android:attr/textColorPrimaryInverse" />
+
+    </LinearLayout>
+</ScrollView>
